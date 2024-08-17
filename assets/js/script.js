@@ -2071,3 +2071,25 @@ $('#cartEffect').on('click', function (e) {
 $('.add-extent .animated-btn').on('click', function (e) {
     $(this).parents(".add-extent").toggleClass("show");
 });
+
+$('#mc-submit').click(function() {
+    debugger;
+    var mce_emailId = $('#mce-EMAIL').val().trim();
+    if(mce_emailId === '')
+    {
+        toastr.error('Email cannot be blank!');
+        return;
+    }
+    else if(!validateEmail(mce_emailId))
+    {
+        toastr.error('Email Id is not valid!');
+        return;
+    }
+    toastr.success('You have been subscribed successfully');
+    $('#mce-EMAIL').val('');
+});
+
+function validateEmail(email) {
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
