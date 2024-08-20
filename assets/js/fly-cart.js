@@ -1,4 +1,4 @@
-$('.cart-info button').on('click', function () {
+$('.cart-info-s button').on('click', function () {
     if($(window).width() > 576){
         var cart = $('.addcart_btm_popup');
     }else{

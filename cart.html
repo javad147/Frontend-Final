@@ -69,7 +69,7 @@
                     <div class="header-contact">
                         <ul>
                             <li>Welcome to TamVaxti</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i>Call Us: +(994) 12 310 01 13</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>Call Us: +(402) 763 282 46</li>
                         </ul>
                     </div>
                 </div>
@@ -119,11 +119,11 @@
                 <div class="main-menu">
                     <div class="menu-left category-nav-right">
                         <div class="brand-logo">
-                            <a href="index.html">
-                                <img src="assets/images/icon/logo.png" alt="TamVaxti" class="img-fluid blur-up lazyload">
+                            <a asp-controller="Home" asp-action="Index">
+                                <img src="assets/images/icon/logo.png" alt="TamVaxti"
+                                     class="img-fluid blur-up lazyload">
                             </a>
                         </div>
-    
                         <div class="navbar">
                             <a href="javascript:void(0)" class="white-content">
                                 <i class="fa fa-bars" aria-hidden="true" style="color:white !important"></i>
@@ -222,134 +222,142 @@
         </div>
     </div>
 </header>
-    <!-- breadcrumb start-->
+
+    <!-- breadcrumb start -->
     <div class="breadcrumb-section">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="page-title">
-                        <h2>blog details</h2>
+                        <h2>Cart</h2>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <nav aria-label="breadcrumb" class="theme-breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="index.html">blog</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">blog deatils</li>
+                            <li class="breadcrumb-item active">Cart</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-    <!-- breadcrumb end-->
+    <!-- breadcrumb End -->
 
 
     <!--section start-->
-    <section class="blog-detail-page section-b-space ratio2_3">
+    <section class="wishlist-section section-b-space">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 blog-detail">
-                    <img src="assets/images/blog/blog_dtl_banner.jpg" class="img-fluid blur-up lazyload" alt="Luxury Watches">
-                    <h3>The Evolution of Luxury Watchmaking: Timeless Craftsmanship Meets Modern Innovation</h3>
-                    <ul class="post-social">
-                        <li>25 January 2024</li>
-                        <li>Posted By: WatchMaster</li>
-                        <li><i class="fa fa-heart"></i> 35 Hits</li>
-                        <li><i class="fa fa-comments"></i> 18 Comments</li>
-                    </ul>
-                    <p>At our watch store, we are dedicated to offering the finest timepieces that combine traditional craftsmanship with modern innovation. Our collection features luxury watches that not only keep perfect time but also serve as a statement of sophistication and elegance.</p>
-                    <p>From the meticulous selection of materials to the precision of every gear and spring, each watch in our collection is a masterpiece in its own right. Whether you are a seasoned collector or a first-time buyer, our range of watches is designed to cater to all tastes and preferences. Experience the beauty of horology as we take you through the journey of how luxury watches have evolved over the years, while staying true to their timeless appeal.</p>
-                    <p>Investing in a luxury watch is more than just a purchase; it is a legacy that can be passed down through generations. With every tick of the clock, our watches symbolize the passage of time, the precision of engineering, and the elegance of design. Join us as we explore the fascinating world of luxury watchmaking and discover why these timepieces continue to captivate enthusiasts around the globe.</p>
+                <div class="col-sm-12 table-responsive-xs">
+                    <table class="table cart-table">
+                        <thead>
+                            <tr class="table-head">
+                                <th scope="col">image</th>
+                                <th scope="col">product name</th>
+                                <th scope="col">price</th>
+                                <th scope="col">availability</th>
+                                <th scope="col">action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#"><img src="assets/images/watch/cart_list.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">cotton shirt</a>
+                                    <div class="mobile-cart-content row">
+                                        <div class="col">
+                                            <p>in stock</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="td-color">$63.00</h2>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="td-color"><a href="#" class="icon me-1"><i class="ti-close"></i>
+                                                </a><a href="#" class="cart"><i class="ti-shopping-cart"></i></a></h2>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h2>$63.00</h2>
+                                </td>
+                                <td>
+                                    <p>in stock</p>
+                                </td>
+                                <td><a href="#" class="icon me-3"><i class="ti-close"></i> </a><a href="#"
+                                        class="cart"><i class="ti-shopping-cart"></i></a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#"><img src="assets/images/watch/cart_list.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">cotton shirt</a>
+                                    <div class="mobile-cart-content row">
+                                        <div class="col">
+                                            <p>in stock</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="td-color">$63.00</h2>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="td-color"><a href="#" class="icon me-1"><i class="ti-close"></i>
+                                                </a><a href="#" class="cart"><i class="ti-shopping-cart"></i></a></h2>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h2>$63.00</h2>
+                                </td>
+                                <td>
+                                    <p>in stock</p>
+                                </td>
+                                <td><a href="#" class="icon me-3"><i class="ti-close"></i> </a><a href="#"
+                                        class="cart"><i class="ti-shopping-cart"></i></a></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#"><img src="assets/images/watch/cart_list.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">cotton shirt</a>
+                                    <div class="mobile-cart-content row">
+                                        <div class="col">
+                                            <p>in stock</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="td-color">$63.00</h2>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="td-color"><a href="#" class="icon me-1"><i class="ti-close"></i>
+                                                </a><a href="#" class="cart"><i class="ti-shopping-cart"></i></a></h2>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h2>$63.00</h2>
+                                </td>
+                                <td>
+                                    <p>in stock</p>
+                                </td>
+                                <td><a href="#" class="icon me-3"><i class="ti-close"></i> </a><a href="#"
+                                        class="cart"><i class="ti-shopping-cart"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="row section-b-space blog-advance">
-                <div class="col-lg-6">
-                    <div><img src="assets/images/blog/making.webp" class="img-fluid blur-up lazyload bg-img" alt="Watchmaking Process"></div>
-                </div>
-                <div class="col-lg-6">
-                    <div><img src="assets/images/blog/colection.jpg" class="img-fluid blur-up lazyload bg-img" alt="Luxury Watch Collection"></div>
-                </div>
-                <div class="col-lg-6">
-                    <ul>
-                        <li>Our watches are crafted with the finest materials for lasting durability and style.</li>
-                        <li>Each timepiece is a result of precise engineering and a deep understanding of horology.</li>
-                        <li>We offer a diverse range of designs to suit every occasion and taste.</li>
-                        <li>Every watch in our collection is backed by a guarantee of quality and authenticity.</li>
-                        <li>Explore the world of luxury watches and discover the perfect timepiece for you.</li>
-                        <li>Our experts are here to guide you through the selection process.</li>
-                        <li>Invest in a watch that not only tells time but also tells a story.</li>
-                        <li>Each watch is a work of art, combining function with exquisite design.</li>
-                        <li>Join the ranks of watch enthusiasts who appreciate the finer things in life.</li>
-                        <li>Find a watch that reflects your style, personality, and aspirations.</li>
-                        <li>Our luxury watches are more than just accessories; they are an investment in timeless elegance.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <p>Discover the timeless appeal of our luxury watches, where each timepiece is crafted with the utmost attention to detail. From classic designs to modern innovations, our collection showcases the best in horological craftsmanship. Whether you're looking for a statement piece or a subtle accessory, our watches are designed to meet the highest standards of quality and style.</p>
-                    <p>Our commitment to excellence ensures that every watch we offer is a masterpiece. With a focus on innovation, tradition, and elegance, we provide a selection of timepieces that are as unique as the individuals who wear them. Explore our collection today and find the watch that speaks to you.</p>
-                    <p>Experience the luxury of precision timekeeping with our range of watches, where each piece is designed to not only look stunning but also to perform flawlessly. With a variety of styles and features to choose from, our watches cater to all tastes and preferences. Invest in a timepiece that will stand the test of time and elevate your everyday style.</p>
-                </div>
-            </div>
-            <div class="row section-b-space">
-                <div class="col-sm-12">
-                    <ul class="comment-section">
-                        <li>
-                            <div class="media"><img src="assets/images/about/team_5.jpg" alt="User Avatar">
-                                <div class="media-body">
-                                    <h6>John Doe <span>( 18 August 2024 at 3:45PM )</span></h6>
-                                    <p>I recently purchased a watch from your store, and I must say, the quality and craftsmanship are exceptional. The watch has quickly become my favorite accessory, and I receive compliments on it all the time. Thank you for offering such a great selection!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="media"><img src="assets/images/about/team_2.jpg" alt="User Avatar">
-                                <div class="media-body">
-                                    <h6>Jane Smith <span>( 15 August 2024 at 11:20AM )</span></h6>
-                                    <p>Your blog on the evolution of luxury watchmaking was an excellent read. It's clear that a lot of thought and expertise goes into selecting and showcasing these timepieces. I look forward to adding more watches from your collection to my own.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="media"><img src="assets/images/about/team_3.jpg" alt="User Avatar">
-                                <div class="media-body">
-                                    <h6>Michael Brown <span>( 10 August 2024 at 9:00AM )</span></h6>
-                                    <p>I appreciated the detailed information on the craftsmanship behind luxury watches. It's fascinating to learn about the history and precision involved in creating these timepieces. I will definitely be considering one of your watches for my next purchase.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row blog-contact">
-                <div class="col-sm-12">
-                    <h2>Leave Your Comment</h2>
-                    <form class="theme-form">
-                        <div class="form-row row">
-                            <div class="col-md-12">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter Your name" required="">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="email">Email</label>
-                                <input type="text" class="form-control" id="email" placeholder="Email" required="">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="exampleFormControlTextarea1">Comment</label>
-                                <textarea class="form-control" placeholder="Write Your Comment" id="exampleFormControlTextarea1" rows="6"></textarea>
-                            </div>
-                            <div class="col-md-12">
-                                <button class="btn btn-solid" type="submit">Post Comment</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="row wishlist-buttons">
+                <div class="col-12"><a href="#" class="btn btn-solid">continue shopping</a> <a href="#"
+                        class="btn btn-solid">check out</a></div>
             </div>
         </div>
     </section>
-    
-    <!--Section ends-->
+    <!--section end-->
 
  <!-- footer -->
  <footer class="footer-light">
@@ -411,8 +419,8 @@
                         <div class="footer-contant">
                             <ul class="contact-list">
                                 
-                                <li><i class="fa fa-phone"></i>Call Us: +994123100113</li>
-                                <li><i class="fa fa-envelope"></i>Email Us: <a href="#">info@code.edu.az</a></li>
+                                <li><i class="fa fa-phone"></i>Call Us: 123-456-7898</li>
+                                <li><i class="fa fa-envelope"></i>Email Us: <a href="#">Support@Multikart.com</a></li>
                                 
                             </ul>
                         </div>
@@ -426,9 +434,9 @@
                         <div class="footer-contant">
                             <ul class="contact-list">
                                 <li>
-                                    <i class="fa fa-map-marker"></i>Nizami k. 203B, AF Business House, 2 floor
+                                    <i class="fa fa-map-marker"></i>Multikart Demo Store, Demo storeIndia 345-659
                                 </li>
-                                <li><i class="fa fa-fax"></i>+994 50 444 2633</li>
+                                <li><i class="fa fa-fax"></i>Fax: 123456</li>
                             </ul>
                         </div>
                     </div>
@@ -586,7 +594,7 @@
                 </li>
                 <li>
                     <div class="buttons">
-                        <a href="cart.html" class="btn btn-solid btn-xs view-cart">view cart</a>
+                        <a href="wishlist.html" class="btn btn-solid btn-xs view-cart">view cart</a>
                         <a href="#" class="btn btn-solid btn-xs checkout">checkout</a>
                     </div>
                 </li>
