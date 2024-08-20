@@ -90,9 +90,7 @@
                                 <li>
                                     <a href="profile.html" >Profile</a>
                                 </li>
-                                <li>
-                                    <a href="cart.html" >My Cart</a>
-                                </li>
+                                
                                     <li>
                                         <a href="login.html" >Login</a>
                                     </li>
@@ -270,10 +268,59 @@
                                     <input type="text" class="form-control" id="email" placeholder="Email" required="">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="review">Password</label>
+                                    <label for="review">Phone Number</label>
                                     <input type="password" class="form-control" id="review"
                                         placeholder="Enter your password" required="">
-                                </div><a href="index.html" class="btn btn-solid w-auto">create Account</a>
+                                </div>
+                            </div>
+                            <div class="form-row row">
+                                <div class="col-md-6 mt-3">
+                                    <label class="astrik" for="Password">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                   
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <label class="astrik" for="ConfirmPassword">Confirm Password</label>
+                                    <input  type="password" class="form-control" placeholder="Confirm Password">                         
+                                </div>
+                                        
+                            </div>
+                            <div class="form-row row">
+                                <div class="col-md-6 mb-3 mt-3">
+                                    <label asp-for="Flat"><strong>Flat/Plot</strong></label>
+                                    <input asp-for="Flat" class="form-control" />
+                                </div>
+                           
+                                <div class="col-md-6 mb-3 mt-3">
+                                    <label asp-for="Address" class="astrik"><strong>Address</strong></label>
+                                    <input asp-for="Address" class="form-control" />
+                                    <span asp-validation-for="Address" class="text-danger"></span>
+                                </div>
+                           
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="ZipCode" class="astrik"><strong>Zip Code</strong></label>
+                                    <input asp-for="ZipCode" class="form-control" />
+                                </div>
+                           
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Country" class="astrik"><strong>Country</strong></label>
+                                    <input asp-for="Country" class="form-control" />
+                                </div>
+                           
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="City" class="astrik"><strong>City</strong></label>
+                                    <input asp-for="City" class="form-control" />
+                                </div>
+                           
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Region" class="astrik"><strong>Region/State</strong></label>
+                                    <input asp-for="Region" class="form-control" />
+                                </div>
+                           
+                                <div class="col-md-12 mt-4 text-right">
+                                    <p class="d-flex justify-content-end">Already have an account? <a href="login.html" class="px-2"> Sign In</a></p>
+                                    <button type="submit" class="btn btn-solid w-auto">Create Account</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -481,7 +528,6 @@
     <a href="javascript:void(0)" class="overlay" onclick="closeCart()"></a>
     <div class="cart-inner">
         <div class="cart_top">
-            <h3>my cart</h3>
             <div class="close-cart">
                 <a href="javascript:void(0)" onclick="closeCart()">
                     <i class="fa fa-times"></i>
@@ -497,47 +543,11 @@
                         </a>
                         <div class="media-body">
                             <a href="#">
-                                <h4>item name</h4>
+                                <h4>Omega</h4>
                             </a>
                             <h4>
                                 <span>1 x $ 299.00</span>
                             </h4>
-                        </div>
-                    </div>
-                    <div class="close-circle">
-                        <a href="#">
-                            <i class="ti-trash"></i>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <a href="#">
-                            <img alt="" class="me-3" src="assets/images/watch/cart_list.jpg">
-                        </a>
-                        <div class="media-body">
-                            <a href="#">
-                                <h4>item name</h4>
-                            </a>
-                            <h4>
-                                <span>1 x $ 299.00</span>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="close-circle">
-                        <a href="#">
-                            <i class="ti-trash"></i>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <a href="#"><img alt="" class="me-3" src="assets/images/watch/cart_list.jpg"></a>
-                        <div class="media-body">
-                            <a href="#">
-                                <h4>item name</h4>
-                            </a>
-                            <h4><span>1 x $ 299.00</span></h4>
                         </div>
                     </div>
                     <div class="close-circle">
@@ -555,7 +565,7 @@
                 </li>
                 <li>
                     <div class="buttons">
-                        <a href="cart.html" class="btn btn-solid btn-xs view-cart">view cart</a>
+                        <a href="wishlist.html" class="btn btn-solid btn-xs view-cart">view cart</a>
                         <a href="#" class="btn btn-solid btn-xs checkout">checkout</a>
                     </div>
                 </li>
